@@ -1,16 +1,31 @@
 // This file contains JavaScript code for interactivity on the website. It may include functions for form validation, smooth scrolling, and other dynamic features.
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling for navigation links
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener("click", function(e) {
+    // Smooth Scrolling Navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute("href");
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({ behavior: "smooth" });
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
+
+    // Back-to-Top Button
+    const backToTopButton = document.getElementById("back-to-top");
+    if (backToTopButton) {
+        backToTopButton.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    }
 
     // Form validation for the contact form
     const contactForm = document.getElementById("contact-form");
