@@ -1,17 +1,19 @@
 {
-  "name": "modern-portfolio-website",
+  "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "A modern portfolio website showcasing skills, projects, and contact information.",
+  "description": "A modern portfolio website showcasing skills and projects.",
   "main": "src/index.html",
   "scripts": {
     "start": "live-server src",
-    "build": "echo 'Build step not defined yet.'"
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
   },
   "keywords": [
     "portfolio",
     "website",
-    "data science",
-    "projects"
+    "personal",
+    "projects",
+    "skills"
   ],
   "author": "Your Name",
   "license": "MIT",
