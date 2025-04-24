@@ -1,24 +1,16 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "A modern portfolio website showcasing skills and projects.",
-  "main": "src/index.html",
+  "description": "A portfolio website to showcase projects including data analysis and visualizations.",
+  "main": "index.js",
   "scripts": {
-    "start": "live-server src",
-    "build": "echo 'Build step not defined'",
+    "start": "live-server public",
+    "build": "echo 'Build process not defined'",
     "test": "echo 'No tests defined'"
   },
-  "keywords": [
-    "portfolio",
-    "website",
-    "personal",
-    "projects",
-    "skills"
-  ],
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "live-server": "^1.2.1"
   }
 }

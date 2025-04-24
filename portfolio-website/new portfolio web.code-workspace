@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "Vut_Workspace",
+			"path": "../Vut_Workspace"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.editor.autoLockGroups": {
+			"mainThreadWebview-markdown.preview": true
+		}
+	}
+}
