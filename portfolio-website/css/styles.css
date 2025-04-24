@@ -57,10 +57,30 @@ h2 {
 
 .project-card {
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -75,7 +95,8 @@ footer {
     flex-direction: column;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ddd;
