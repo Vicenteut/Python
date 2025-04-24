@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #A8C256; /* Verde oliva claro */
+    color: #A8C256;
 }
 
 /* Secciones principales */
@@ -64,75 +64,31 @@ section h2 {
     color: #556B2F;
 }
 
-/* Sección About Me */
-.about-me p, .contact-info p {
-    margin: 10px 0;
-}
-
-/* Skills usando Grid */
-.skills ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 0;
-    list-style: none;
-}
-
-.skills li {
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 6px;
-    border-left: 5px solid #556B2F;
-}
-
-/* Proyectos Destacados */
-.projects article {
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.projects article:last-child {
-    border-bottom: none;
-}
-
-.projects a {
-    text-decoration: none;
-    color: #556B2F;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.projects a:hover {
-    color: #A8C256;
-}
-
-/* Formulario Contact Me */
-.contact form {
+/* Contact Buttons */
+.contact-buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
-.contact form input,
-.contact form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contact form button {
+.contact-buttons a {
+    display: inline-block;
     background-color: #556B2F;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.contact form button:hover {
+.contact-buttons a:hover {
     background-color: #A8C256;
+    transform: translateY(-3px);
 }
 
 /* Responsive Design */
