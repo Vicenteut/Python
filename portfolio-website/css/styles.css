@@ -1,68 +1,152 @@
+/* Estilos Generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #f0f0f0;
     color: #333;
-    background-color: #D3D3D3; /* Gray background */
+    line-height: 1.6;
 }
 
+/* Encabezado principal */
 header {
-    background: #556B2F; /* Olive green */
+    background-color: #333;
     color: #fff;
-    padding: 20px 0; /* Increased padding */
-    text-align: center;
-    max-width: 800px; /* Constrain width */
-    margin: auto; /* Center */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-nav {
-    margin: 20px auto; /* Center and increase margin */
-    max-width: 800px; /* Constrain width */
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
 }
 
-nav a {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold; /* Bolder nav links */
+    transition: color 0.3s;
 }
 
-.hero {
-    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 30px; /* Space below hero */
+nav ul li a:hover {
+    color: #A8C256; /* Verde oliva claro */
 }
 
-.about, .skills, .projects, .contact {
-    padding: 30px; /* Increased padding */
+/* Secciones principales */
+section {
     max-width: 800px;
-    margin: auto;
-    background: #FFFFFF; /* White background for sections */
-    border-radius: 10px; /* Rounded corners */
-    margin-bottom: 30px; /* Space between sections */
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color: #556B2F; /* Olive green */
-    font-size: 2em; /* Larger headings */
-    margin-bottom: 20px; /* Space below headings */
+section h2 {
+    border-bottom: 2px solid #A8C256;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #556B2F;
 }
 
+/* Sección About Me */
+.about-me p, .contact-info p {
+    margin: 10px 0;
+}
+
+/* Skills usando Grid */
 .skills ul {
-    list-style-type: none;
-    padding: 0;
-    display: grid; /* Grid for skills */
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px; /* Space between skills */
+    gap: 15px;
+    padding: 0;
+    list-style: none;
 }
 
 .skills li {
-    background: #F4F4F4;
-    padding: 15px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 5px solid #556B2F;
+}
+
+/* Proyectos Destacados */
+.projects article {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.projects article:last-child {
+    border-bottom: none;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #556B2F;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.projects a:hover {
+    color: #A8C256;
+}
+
+/* Formulario Contact Me */
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input,
+.contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    background-color: #556B2F;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #A8C256;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+}
