@@ -1,14 +1,20 @@
 {
 	"folders": [
 		{
-			"path": ".."
-		},
-		{
 			"name": "Vut_Workspace",
 			"path": "../Vut_Workspace"
 		},
 		{
+			"name": "Python bb",
+			"path": ".."
+		},
+		{
+			"name": "portfolio-website",
 			"path": "."
+		},
+		{
+			"name": "tripleten_notebook",
+			"path": "../../../../PycharmProjects/PythonProject/tripleten_notebook"
 		}
 	],
 	"settings": {

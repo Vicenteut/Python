@@ -1,6 +1,6 @@
 import json
 
-input_file = "video_game_sales_forecasting_cleaned.ipynb"
+input_file = "Project_5_video_games.ipynb"
 output_file = "video_game_sales_forecasting_final_cleaned.ipynb"
 
 # Función recursiva para eliminar todas las claves "id" del diccionario
