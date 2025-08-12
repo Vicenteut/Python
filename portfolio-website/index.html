@@ -2,122 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vicente Uzcategui - Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Basic SEO -->
   <meta name="description" content="Portfolio of Vicente Uzcategui — Data Analyst / Data Science projects, skills, and contact information." />
   <meta property="og:title" content="Vicente Uzcategui - Portfolio" />
   <meta property="og:description" content="Data projects in Python, analytics, and visualization." />
   <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1b1c1f" />
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+
   <link rel="stylesheet" href="css/styles.css" />
-  <!-- <link rel="icon" href="/favicon.ico" /> Uncomment if you add a favicon -->
 </head>
 <body>
-  <header>
-    <h1>Vicente Uzcategui</h1>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <h1 class="logo">Vicente Uzcategui</h1>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">☰</button>
+      <nav id="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
 
+    <!-- HERO -->
     <section id="hero" aria-label="Hero">
-      <h2>Welcome to My Portfolio</h2>
-      <p>Discover my work and skills in data science.</p>
+      <div class="container">
+        <div class="card">
+          <h2>Data Analyst focused on turning messy data into clear business decisions.</h2>
+          <p class="muted">Python • Pandas • SQL • Visualization</p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="mailto:vcnts28@gmail.com">Contact Me</a>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" aria-label="About">
-      <h2>About Me</h2>
-      <p>📍 Belize</p>
-      <p>📧 <a href="mailto:vcnts28@gmail.com">vcnts28@gmail.com</a></p>
-      <p>
-        <a href="https://www.linkedin.com/in/vicenteut/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-        <a href="https://github.com/Chicobambi" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
+      <div class="container">
+        <div class="card">
+          <h2>About Me</h2>
+          <p>📍 Belize</p>
+          <p>📧 <a href="mailto:vcnts28@gmail.com">vcnts28@gmail.com</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/vicenteut/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://github.com/Chicobambi" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+          <ul class="bullets">
+            <li>Healthcare & telecom background; data-driven problem solving.</li>
+            <li>Clean notebooks and dashboards to support decisions.</li>
+            <li>Stack: Python, Pandas, SQL, Matplotlib/Plotly.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" aria-label="Skills">
-      <h2>Skills</h2>
-      <h3>Technical</h3>
-      <ul>
-        <li>Python, Pandas, NumPy</li>
-        <li>Descriptive Statistics</li>
-        <li>Data Analysis</li>
-        <li>Jupyter Notebook, VS Code, GitHub</li>
-      </ul>
-      <h3>Soft</h3>
-      <ul>
-        <li>Problem Solving</li>
-        <li>Adaptability</li>
-        <li>Analytical Thinking</li>
-        <li>Working Under Pressure</li>
-      </ul>
+      <div class="container">
+        <div class="card">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div>
+              <h3>Technical</h3>
+              <ul>
+                <li>Python, Pandas, NumPy</li>
+                <li>Descriptive Statistics</li>
+                <li>Data Analysis</li>
+                <li>Jupyter Notebook, VS Code, GitHub</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Soft</h3>
+              <ul>
+                <li>Problem Solving</li>
+                <li>Adaptability</li>
+                <li>Analytical Thinking</li>
+                <li>Working Under Pressure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" aria-label="Projects">
-      <h2>Featured Projects</h2>
+      <div class="container">
+        <h2>Featured Projects</h2>
 
-      <article class="project-card">
-        <h3>Comparative Analysis of Prepaid Plans for Megaline</h3>
-        <p>Analyzed revenue from telecom customers using Pandas and Matplotlib.</p>
-        <a href="https://github.com/Chicobambi/Python-bb/blob/main/Projects/Megaline%20Project%20Sprint%203.ipynb"
-           target="_blank" rel="noopener noreferrer">View Notebook</a>
-      </article>
+        <div class="grid">
+          <article class="card project">
+            <div class="thumb" aria-hidden="true">Megaline</div>
+            <h3>Comparative Analysis of Prepaid Plans for Megaline</h3>
+            <p class="muted">Analyzed revenue from telecom customers using Pandas and Matplotlib.</p>
+            <ul class="tags">
+              <li>Pandas</li><li>Matplotlib</li><li>EDA</li>
+            </ul>
+            <div class="actions">
+              <a class="btn ghost" target="_blank" rel="noopener noreferrer" href="https://github.com/Chicobambi/Python-bb/blob/main/Projects/Megaline%20Project%20Sprint%203.ipynb">View Notebook</a>
+            </div>
+          </article>
 
-      <article class="project-card">
-        <h3>Video Game Sales Forecasting</h3>
-        <p>Data analysis project identifying trends in video game sales.</p>
-        <a href="https://github.com/Chicobambi/Python-bb/blob/main/Projects/video_game_sales_forecasting_final_cleaned.ipynb"
-           target="_blank" rel="noopener noreferrer">View on GitHub</a>
-      </article>
+          <article class="card project">
+            <div class="thumb" aria-hidden="true">Game Sales</div>
+            <h3>Video Game Sales Forecasting</h3>
+            <p class="muted">Data analysis project identifying trends in video game sales.</p>
+            <ul class="tags">
+              <li>Time Series</li><li>EDA</li><li>Visualization</li>
+            </ul>
+            <div class="actions">
+              <a class="btn ghost" target="_blank" rel="noopener noreferrer" href="https://github.com/Chicobambi/Python-bb/blob/main/Projects/video_game_sales_forecasting_final_cleaned.ipynb">View on GitHub</a>
+            </div>
+          </article>
 
-      <article class="project-card">
-        <h3>Machine Learning Model for Smart vs Ultra Plan Prediction</h3>
-        <p>Built a predictive model to determine whether a customer should choose the Smart or Ultra plan, using Decision Tree and Random Forest algorithms.</p>
-        <a href="https://github.com/Vicenteut/portfolio-website/blob/main/projects/megaline_project_ml_final.ipynb"
-           target="_blank" rel="noopener noreferrer">View on GitHub</a>
-      </article>
+          <article class="card project">
+            <div class="thumb" aria-hidden="true">Plan Classifier</div>
+            <h3>Machine Learning Model for Smart vs Ultra Plan Prediction</h3>
+            <p class="muted">Built a predictive model to determine whether a customer should choose the Smart or Ultra plan, using Decision Tree and Random Forest algorithms.</p>
+            <ul class="tags">
+              <li>Classification</li><li>Decision Tree</li><li>Random Forest</li>
+            </ul>
+            <div class="actions">
+              <a class="btn ghost" target="_blank" rel="noopener noreferrer" href="https://github.com/Vicenteut/portfolio-website/blob/main/projects/megaline_project_ml_final.ipynb">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <!-- RESUME -->
     <section id="resume" aria-label="Resume">
-      <h2>Resume</h2>
-      <h3>Education</h3>
-      <p><strong>Google Data Analytics Professional Certificate</strong></p>
-      <ul>
-        <li>Data Analysis, SQL, R, Visualization</li>
-      </ul>
+      <div class="container">
+        <div class="card">
+          <h2>Resume</h2>
+          <h3>Education</h3>
+          <p><strong>Google Data Analytics Professional Certificate</strong></p>
+          <ul>
+            <li>Data Analysis, SQL, R, Visualization</li>
+          </ul>
+          <!-- Upload your PDF to /cv/ and uncomment -->
+          <!-- <a class="btn ghost" href="/cv/Vicente_Uzcategui_CV.pdf" target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a> -->
+        </div>
+      </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" aria-label="Contact">
-      <h2>Contact Me</h2>
-      <!-- Replace with Formspree action if you choose that path -->
-      <form action="https://formspree.io/f/yourFormID" method="POST">
-        <input type="text" name="Name" placeholder="Name" required />
-        <input type="email" name="Email" placeholder="Email" required />
-        <textarea name="Message" placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div class="container">
+        <div class="card">
+          <h2>Contact Me</h2>
+          <!-- Replace with your real Formspree ID -->
+          <form action="https://formspree.io/f/yourFormID" method="POST">
+            <input type="text" name="Name" placeholder="Name" required />
+            <input type="email" name="Email" placeholder="Email" required />
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
 
-      <div class="contact-buttons">
-        <a href="https://www.linkedin.com/in/vicenteut/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/Chicobambi" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <!-- <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> -->
+          <div class="social">
+            <a href="https://www.linkedin.com/in/vicenteut/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Chicobambi" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>© 2025 Vicente Uzcategui</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Vicente Uzcategui</p>
+    </div>
   </footer>
+
+  <!-- Small script for mobile nav -->
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#nav');
+    btn?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
 </body>
 </html>
